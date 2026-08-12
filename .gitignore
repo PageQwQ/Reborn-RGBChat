@@ -1,0 +1,12 @@
+.DS_Store
+bin/
+build/
+out/
+.gradle/
+run/
+.idea/
+.vscode/
+.eclipse/
+*.iml
+*.log
+hs_err*.log

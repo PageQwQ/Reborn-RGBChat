@@ -1,0 +1,31 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    withSourcesJar()
+}
+
+group = 'pageqwq.rgbchat'
+version = '1.0.0'
+
+// Shared pure-Java core lives in common/ (no Minecraft dependencies)
+sourceSets.main.java.srcDirs += file('common')
+
+repositories {
+    maven { url = 'https://maven.aliyun.com/repository/public' }
+    maven { url = 'https://maven.aliyun.com/repository/central' }
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
