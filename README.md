@@ -4,6 +4,8 @@
 
 A mod that lets you output colored text.
 
+![Preview](/images/preview.png)
+
 </center></div>
 
 Type `#RRGGBB` tags anywhere text renders and it gets colored client-side — no server mod, no network involvement:
@@ -19,7 +21,7 @@ It also supports item names renamed on signs or anvils.
 
 | Loader | Versions |
 |---|---|
-| Fabric | 1.21.1, 1.21.2 – 1.21.11, 26.1.2, 26.2 |
+| Fabric | 1.21.x, 26.1.2, 26.2 |
 | NeoForge | 1.21.1, 1.21.4, 1.21.11, 26.1.2, 26.2 |
 
 On dedicated servers the mod is a no-op.
