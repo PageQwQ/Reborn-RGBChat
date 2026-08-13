@@ -2,7 +2,7 @@ name: Build & Release
 
 on:
   push:
-    branches: [main]
+    branches: [main, 1.21.x]
     tags: ['v*']
   workflow_dispatch:
 
