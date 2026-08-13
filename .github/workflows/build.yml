@@ -61,6 +61,9 @@ jobs:
       - name: Generate release notes
         run: python3 scripts/gen-release-notes.py > /tmp/release-notes.md
 
+      - name: Drop sources jars
+        run: find jars -name '*-sources.jar' -delete
+
       - uses: softprops/action-gh-release@v2
         with:
           body_path: /tmp/release-notes.md
