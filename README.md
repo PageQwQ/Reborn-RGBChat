@@ -28,24 +28,34 @@ On dedicated servers the mod is a no-op.
 
 ## Project layout
 
-The mod is a pure-Java core plus thin loader layers:
+The mod is a pure-Java core plus thin loader layers, split across branches:
 
-| Directory | Target | Notes |
+| Branch | Contents |
+|---|---|
+| `main` | Common core (`common/`), publish tooling (`scripts/`), doc/CI-less base |
+| `1.21.x` | Fabric 1.21.1–1.21.11 + NeoForge 1.21.1/1.21.4/1.21.11 projects |
+| `26.x` | Fabric + NeoForge 26.1.2/26.2 projects |
+
+The loader projects live on their version branch:
+
+| Directory (on `1.21.x`) | Target | Notes |
 |---|---|---|
-| `common/` | — | Loader-free parsing/format core (`RgbParser`, `RgbFormat`, gradient engine), source-linked into every project |
 | `mc-1-21-1/` | Fabric 1.21.1 | fabric-loom, JDK 21 |
 | `mc-1-21-x/` | Fabric 1.21.2–1.21.11 | single project, switch with `-Pmc_version` |
-| `mc-26-x/` | Fabric 26.1.2, 26.2 | same project, switch with `-Pmc_version` |
-| `mc-26-x-neoforge/` | NeoForge 26.1.2, 26.2 | ModDevGradle, switch with `-Pneoforge_version` |
 | `mc-1-21-1-neoforge/` | NeoForge 1.21.1 | ModDevGradle, fixed version |
 | `mc-1-21-4-neoforge/` | NeoForge 1.21.4 | ModDevGradle, fixed version |
 | `mc-1-21-11-neoforge/` | NeoForge 1.21.11 | ModDevGradle, fixed version |
-| `scripts/` | — | Modrinth publish tooling |
+
+| Directory (on `26.x`) | Target | Notes |
+|---|---|---|
+| `mc-26-x/` | Fabric 26.1.2, 26.2 | same project, switch with `-Pmc_version` |
+| `mc-26-x-neoforge/` | NeoForge 26.1.2, 26.2 | ModDevGradle, switch with `-Pneoforge_version` |
 
 ## Build
 
 JDK 21 is required for the 1.21.x projects, JDK 25 for the 26.x projects
-(`org.gradle.java.home` pins the JDK in each `gradle.properties`).
+(`org.gradle.java.home` pins the JDK in each `gradle.properties`). Check out the
+version branch first, then build:
 
 ```sh
 ./mc-1-21-1/gradlew -p mc-1-21-1 build
