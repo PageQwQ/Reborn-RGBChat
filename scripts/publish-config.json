@@ -1,0 +1,62 @@
+{
+  "title": "RGB Chat",
+  "slug": "rgb-chat",
+  "description": "Colored chat messages using & color codes (§ codes &6like §6this§r). Client-side only, no server mod needed.",
+  "body_file": "scripts/body.md",
+  "license_id": "MIT",
+  "client_side": "required",
+  "server_side": "unsupported",
+  "categories": ["chat", "social", "utility"],
+  "source_url": "https://github.com/waterfrog68/RGB-Chat-Renewed",
+  "icon": "mc-26-x/src/main/resources/assets/rgbchat/icon.png",
+  "versions": [
+    {
+      "key": "fabric-262",
+      "build": { "dir": "mc-26-x", "args": ["-Pmc_version=26.2"] },
+      "jar": "mc-26-x/build/libs/rgbchat-26.2-1.0.0-fabric.jar",
+      "sources": "mc-26-x/build/libs/rgbchat-26.2-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+26.2",
+      "version_title": "RGB Chat 1.0.0 for 26.2 (Fabric)",
+      "game_versions": ["26.2"],
+      "loaders": ["fabric"],
+      "release_channel": "release",
+      "changelog": "### Added\n- Rebuilt mod for Minecraft 26.2 on Fabric, matching the original RGB Chat.\n- Auto-creates config/rgbchat.json with the same defaults as before."
+    },
+    {
+      "key": "fabric-2612",
+      "build": { "dir": "mc-26-x", "args": ["-Pmc_version=26.1.2"] },
+      "jar": "mc-26-x/build/libs/rgbchat-26.1.2-1.0.0-fabric.jar",
+      "sources": "mc-26-x/build/libs/rgbchat-26.1.2-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+26.1.2",
+      "version_title": "RGB Chat 1.0.0 for 26.1.2 (Fabric)",
+      "game_versions": ["26.1.2"],
+      "loaders": ["fabric"],
+      "release_channel": "release",
+      "changelog": "### Added\n- Rebuilt mod for Minecraft 26.1.2 on Fabric, matching the original RGB Chat."
+    },
+    {
+      "key": "neoforge-262",
+      "build": { "dir": "mc-26-x-neoforge", "args": ["-Pneoforge_version=26.2.0.53-beta"] },
+      "jar": "mc-26-x-neoforge/build/libs/rgbchat-neoforge-26.2-1.0.0.jar",
+      "sources": "mc-26-x-neoforge/build/libs/rgbchat-neoforge-26.2-1.0.0-sources.jar",
+      "version_number": "1.0.0+26.2",
+      "version_title": "RGB Chat 1.0.0 for 26.2 (NeoForge)",
+      "game_versions": ["26.2"],
+      "loaders": ["neoforge"],
+      "release_channel": "release",
+      "changelog": "### Added\n- Rebuilt mod for Minecraft 26.2 on NeoForge, matching the original RGB Chat.\n- Client-side only: harmless no-op on dedicated servers."
+    },
+    {
+      "key": "neoforge-2612",
+      "build": { "dir": "mc-26-x-neoforge", "args": ["-Pneoforge_version=26.1.2.94"] },
+      "jar": "mc-26-x-neoforge/build/libs/rgbchat-neoforge-26.1.2-1.0.0.jar",
+      "sources": "mc-26-x-neoforge/build/libs/rgbchat-neoforge-26.1.2-1.0.0-sources.jar",
+      "version_number": "1.0.0+26.1.2",
+      "version_title": "RGB Chat 1.0.0 for 26.1.2 (NeoForge)",
+      "game_versions": ["26.1.2"],
+      "loaders": ["neoforge"],
+      "release_channel": "release",
+      "changelog": "### Added\n- Rebuilt mod for Minecraft 26.1.2 on NeoForge, matching the original RGB Chat."
+    }
+  ]
+}
