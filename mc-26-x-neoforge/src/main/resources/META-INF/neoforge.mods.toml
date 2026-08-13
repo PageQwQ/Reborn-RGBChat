@@ -7,8 +7,9 @@ issueTrackerURL = "https://github.com/waterfrog68/RGB-Chat-Renewed/issues"
 modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
+logoFile = "assets/rgbchat/icon.png"
 
-description = '''RGB Chat: colored chat messages using & color codes, client-side only.'''
+description = '''RGB Chat: #RRGGBB colored and gradient text, client-side only.'''
 
 [[mixins]]
 config = "${mod_id}.mixins.json"

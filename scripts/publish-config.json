@@ -7,12 +7,12 @@
   "client_side": "required",
   "server_side": "unsupported",
   "categories": [
-    "chat",
+    "tweaks",
     "social",
     "utility"
   ],
   "source_url": "https://github.com/PageQwQ/Reborn-RGBChat",
-  "icon": "mc-26-x/src/main/resources/assets/rgbchat/icon.png",
+  "icon": "icon.png",
   "versions": [
     {
       "key": "fabric-262",
