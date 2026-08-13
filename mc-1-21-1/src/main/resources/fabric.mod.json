@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "rgbchat",
+  "version": "${version}",
+  "name": "RGB Chat Reborn",
+  "description": "Type #RRGGBB for solid RGB text and #RRGGBB-RRGGBB for gradients. Works in chat, signs, anvils and item names - fully client-side, vanilla-server friendly.",
+  "authors": ["PageQwQ"],
+  "license": "MIT",
+  "icon": "assets/rgbchat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["pageqwq.rgbchat.RgbChatClient"]
+  },
+  "mixins": [
+    "rgbchat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}

@@ -19,7 +19,8 @@ public final class RgbConfig {
 
     private static volatile RgbConfig instance = new RgbConfig();
 
-    private RgbConfig() {
+    /** Public for (de)serialization; use {@link #get()} for the active instance. */
+    public RgbConfig() {
     }
 
     public static RgbConfig get() {

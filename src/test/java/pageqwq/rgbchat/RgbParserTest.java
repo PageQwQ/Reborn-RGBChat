@@ -13,7 +13,7 @@ class RgbParserTest {
     private static String chars(List<StyledChar> parsed) {
         StringBuilder sb = new StringBuilder();
         for (StyledChar sc : parsed) {
-            sb.append(sc.character);
+            sb.appendCodePoint(sc.codePoint);
         }
         return sb.toString();
     }
@@ -198,5 +198,33 @@ class RgbParserTest {
         List<StyledChar> parsed = RgbParser.parse("#000000-FFFFFF#FF0000X");
         assertEquals("X", chars(parsed));
         assertEquals(0xFF0000, parsed.get(0).format.color);
+    }
+
+    @Test
+    void nonBmpCharCountsAsOneGradientSlot() {
+        // A + emoji (surrogate pair) + B -> 3 visible characters
+        List<StyledChar> parsed = RgbParser.parse("#000000-FFFFFFA\uD83D\uDE00B");
+        assertEquals("A\uD83D\uDE00B", chars(parsed));
+        assertEquals(3, parsed.size());
+        assertEquals(0x000000, parsed.get(0).format.color);
+        assertEquals(0x808080, parsed.get(1).format.color);
+        assertEquals(0xFFFFFF, parsed.get(2).format.color);
+        // emoji entry carries the index of its high surrogate
+        assertEquals(15, parsed.get(1).index);
+        assertEquals(0x1F600, parsed.get(1).codePoint);
+        assertEquals(17, parsed.get(2).index);
+    }
+
+    @Test
+    void brokenSurrogateBecomesReplacementChar() {
+        List<StyledChar> parsed = RgbParser.parse("A\uD83DB");
+        assertEquals(3, parsed.size());
+        assertEquals('A', parsed.get(0).codePoint);
+        assertEquals(0xFFFD, parsed.get(1).codePoint);
+        assertEquals('B', parsed.get(2).codePoint);
+        // trailing unpaired high surrogate
+        List<StyledChar> trailing = RgbParser.parse("A\uD83D");
+        assertEquals(2, trailing.size());
+        assertEquals(0xFFFD, trailing.get(1).codePoint);
     }
 }

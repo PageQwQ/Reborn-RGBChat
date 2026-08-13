@@ -24,6 +24,7 @@ import java.util.List;
  */
 public final class RgbParser {
     private static final char SECTION = '§';
+    private static final int REPLACEMENT_CHAR = 0xFFFD;
 
     private RgbParser() {
     }
@@ -124,6 +125,24 @@ public final class RgbParser {
                 continue;
             }
 
+            // regular character, with vanilla-style surrogate handling
+            if (Character.isHighSurrogate(c)) {
+                if (i + 1 >= n) {
+                    // unpaired high surrogate at the end -> replacement char (vanilla)
+                    emit(out, buffer, fmt, i, REPLACEMENT_CHAR);
+                    i++;
+                } else {
+                    char low = s.charAt(i + 1);
+                    if (Character.isLowSurrogate(low)) {
+                        emit(out, buffer, fmt, i, Character.toCodePoint(c, low));
+                        i += 2;
+                    } else {
+                        emit(out, buffer, fmt, i, REPLACEMENT_CHAR);
+                        i++;
+                    }
+                }
+                continue;
+            }
             emit(out, buffer, fmt, i, c);
             i++;
         }
@@ -132,13 +151,13 @@ public final class RgbParser {
         return out;
     }
 
-    /** Emits one character either into the gradient buffer or directly to the output. */
+    /** Emits one code point either into the gradient buffer or directly to the output. */
     private static void emit(List<StyledChar> out, List<StyledChar> buffer,
-                             RgbFormat fmt, int index, char c) {
+                             RgbFormat fmt, int index, int codePoint) {
         if (buffer != null) {
-            buffer.add(new StyledChar(index, c, fmt.copy()));
+            buffer.add(new StyledChar(index, codePoint, fmt.copy()));
         } else {
-            out.add(new StyledChar(index, c, fmt.copy()));
+            out.add(new StyledChar(index, codePoint, fmt.copy()));
         }
     }
 
