@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "pageqwq.rgbchat.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "StringDecomposerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
