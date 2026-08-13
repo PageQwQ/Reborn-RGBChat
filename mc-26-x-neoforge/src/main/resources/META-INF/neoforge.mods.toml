@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[3.0,)"
 license = "${mod_license}"
-issueTrackerURL = "https://github.com/waterfrog68/RGB-Chat-Renewed/issues"
+issueTrackerURL = "https://github.com/PageQwQ/Reborn-RGBChat/issues"
 
 [[mods]]
 modId = "${mod_id}"
