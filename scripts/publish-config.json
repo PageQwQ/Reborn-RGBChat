@@ -151,6 +151,234 @@
       ],
       "release_channel": "release",
       "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-12111",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.11"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.11-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.11-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.11",
+      "version_title": "RGB Chat 1.0.0 for 1.21.11 (Fabric)",
+      "game_versions": [
+        "1.21.11"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-12110",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.10"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.10-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.10-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.10",
+      "version_title": "RGB Chat 1.0.0 for 1.21.10 (Fabric)",
+      "game_versions": [
+        "1.21.10"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1219",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.9"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.9-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.9-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.9",
+      "version_title": "RGB Chat 1.0.0 for 1.21.9 (Fabric)",
+      "game_versions": [
+        "1.21.9"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1218",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.8"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.8-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.8-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.8",
+      "version_title": "RGB Chat 1.0.0 for 1.21.8 (Fabric)",
+      "game_versions": [
+        "1.21.8"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1217",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.7"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.7-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.7-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.7",
+      "version_title": "RGB Chat 1.0.0 for 1.21.7 (Fabric)",
+      "game_versions": [
+        "1.21.7"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1216",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.6"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.6-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.6-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.6",
+      "version_title": "RGB Chat 1.0.0 for 1.21.6 (Fabric)",
+      "game_versions": [
+        "1.21.6"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1215",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.5"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.5-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.5-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.5",
+      "version_title": "RGB Chat 1.0.0 for 1.21.5 (Fabric)",
+      "game_versions": [
+        "1.21.5"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1214",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.4"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.4-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.4-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.4",
+      "version_title": "RGB Chat 1.0.0 for 1.21.4 (Fabric)",
+      "game_versions": [
+        "1.21.4"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1213",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.3"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.3-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.3-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.3",
+      "version_title": "RGB Chat 1.0.0 for 1.21.3 (Fabric)",
+      "game_versions": [
+        "1.21.3"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1212",
+      "build": {
+        "dir": "mc-1-21-x",
+        "args": [
+          "-Pmc_version=1.21.2"
+        ]
+      },
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.2-1.0.0-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.2-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.2",
+      "version_title": "RGB Chat 1.0.0 for 1.21.2 (Fabric)",
+      "game_versions": [
+        "1.21.2"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+    },
+    {
+      "key": "fabric-1211",
+      "build": {
+        "dir": "mc-1-21-1"
+      },
+      "jar": "mc-1-21-1/build/libs/rgbchat-1.21.1-1.0.0-fabric.jar",
+      "sources": "mc-1-21-1/build/libs/rgbchat-1.21.1-1.0.0-fabric-sources.jar",
+      "version_number": "1.0.0+1.21.1",
+      "version_title": "RGB Chat 1.0.0 for 1.21.1 (Fabric)",
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "fabric"
+      ],
+      "release_channel": "release",
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     }
   ]
 }

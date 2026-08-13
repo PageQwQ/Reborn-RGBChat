@@ -20,6 +20,17 @@ jobs:
             dir: mc-26-x
             java: 25
             cmd: ./gradlew build --console=plain -Pmc_version=26.2 && ./gradlew build --console=plain -Pmc_version=26.1.2
+          - name: fabric-121x
+            dir: mc-1-21-x
+            java: 21
+            cmd: |
+              for v in 1.21.2 1.21.3 1.21.4 1.21.5 1.21.6 1.21.7 1.21.8 1.21.9 1.21.10 1.21.11; do
+                ./gradlew build --console=plain -Pmc_version=$v || exit 1
+              done
+          - name: fabric-1211
+            dir: mc-1-21-1
+            java: 21
+            cmd: ./gradlew build --console=plain
           - name: neoforge-26x
             dir: mc-26-x-neoforge
             java: 25
@@ -47,7 +58,7 @@ jobs:
 
       - name: Strip local JAVA_HOME pin
         run: |
-          for p in mc-26-x mc-26-x-neoforge mc-1-21-1-neoforge mc-1-21-4-neoforge mc-1-21-11-neoforge; do
+          for p in mc-26-x mc-26-x-neoforge mc-1-21-1-neoforge mc-1-21-4-neoforge mc-1-21-11-neoforge mc-1-21-x mc-1-21-1; do
             sed -i '/org.gradle.java.home/d' "$p/gradle.properties" || true
           done
 

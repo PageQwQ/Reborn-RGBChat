@@ -37,11 +37,18 @@ slug=$(py -c "import json;print(json.load(open('$CONFIG'))['slug'])")
 
 resolve_id() {
   local out
-  out=$(curl -s -H "User-Agent: $UA" "$API/project/$slug") || true
+  out=$(curl -s -H "User-Agent: $UA" "$API/project/$slug")
   project_id=$(py -c "
 import json,sys
 try: print(json.loads(sys.stdin.read())['id'])
 except Exception: print('')" <<<"$out")
+  if [[ -z "$project_id" ]]; then
+    out=$(curl -s -H "Authorization: Bearer $MODRINTH_PAT" -H "User-Agent: $UA" "$API/project/$slug")
+    project_id=$(py -c "
+import json,sys
+try: print(json.loads(sys.stdin.read())['id'])
+except Exception: print('')" <<<"$out")
+  fi
 }
 
 build_missing() {
