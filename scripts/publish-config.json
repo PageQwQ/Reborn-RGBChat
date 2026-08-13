@@ -97,6 +97,60 @@
       ],
       "release_channel": "release",
       "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 26.1.2 on Neoforge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod.\n- Auto-creates config/rgbchat.json."
+    },
+    {
+      "key": "neoforge-1211",
+      "build": {
+        "dir": "mc-1-21-1-neoforge"
+      },
+      "jar": "mc-1-21-1-neoforge/build/libs/rgbchat-neoforge-1.21.1-1.0.0.jar",
+      "sources": "mc-1-21-1-neoforge/build/libs/rgbchat-neoforge-1.21.1-1.0.0-sources.jar",
+      "version_number": "1.0.0+1.21.1",
+      "version_title": "RGB Chat 1.0.0 for 1.21.1 (NeoForge)",
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "release_channel": "release",
+      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 1.21.1 on NeoForge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod."
+    },
+    {
+      "key": "neoforge-1214",
+      "build": {
+        "dir": "mc-1-21-4-neoforge"
+      },
+      "jar": "mc-1-21-4-neoforge/build/libs/rgbchat-neoforge-1.21.4-1.0.0.jar",
+      "sources": "mc-1-21-4-neoforge/build/libs/rgbchat-neoforge-1.21.4-1.0.0-sources.jar",
+      "version_number": "1.0.0+1.21.4",
+      "version_title": "RGB Chat 1.0.0 for 1.21.4 (NeoForge)",
+      "game_versions": [
+        "1.21.4"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "release_channel": "release",
+      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 1.21.4 on NeoForge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod."
+    },
+    {
+      "key": "neoforge-12111",
+      "build": {
+        "dir": "mc-1-21-11-neoforge"
+      },
+      "jar": "mc-1-21-11-neoforge/build/libs/rgbchat-neoforge-1.21.11-1.0.0.jar",
+      "sources": "mc-1-21-11-neoforge/build/libs/rgbchat-neoforge-1.21.11-1.0.0-sources.jar",
+      "version_number": "1.0.0+1.21.11",
+      "version_title": "RGB Chat 1.0.0 for 1.21.11 (NeoForge)",
+      "game_versions": [
+        "1.21.11"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "release_channel": "release",
+      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 1.21.11 on NeoForge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod."
     }
   ]
 }
