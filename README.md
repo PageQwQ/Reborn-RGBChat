@@ -16,7 +16,7 @@ Supported render contexts: chat, signs, anvils, item names, and the message inpu
 | Loader | Versions |
 |---|---|
 | Fabric | 1.21.1, 1.21.2 – 1.21.11, 26.1.2, 26.2 |
-| NeoForge | 26.1.2, 26.2 |
+| NeoForge | 1.21.1, 1.21.4, 1.21.11, 26.1.2, 26.2 |
 
 On dedicated servers the mod is a no-op.
 
@@ -31,6 +31,9 @@ The mod is a pure-Java core plus thin loader layers:
 | `mc-1-21-x/` | Fabric 1.21.2–1.21.11 | single project, switch with `-Pmc_version` |
 | `mc-26-x/` | Fabric 26.1.2, 26.2 | same project, switch with `-Pmc_version` |
 | `mc-26-x-neoforge/` | NeoForge 26.1.2, 26.2 | ModDevGradle, switch with `-Pneoforge_version` |
+| `mc-1-21-1-neoforge/` | NeoForge 1.21.1 | ModDevGradle, fixed version |
+| `mc-1-21-4-neoforge/` | NeoForge 1.21.4 | ModDevGradle, fixed version |
+| `mc-1-21-11-neoforge/` | NeoForge 1.21.11 | ModDevGradle, fixed version |
 | `scripts/` | — | Modrinth publish tooling |
 
 ## Building
