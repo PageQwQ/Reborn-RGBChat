@@ -33,7 +33,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 26.2 on Fabric.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod.\n- Auto-creates config/rgbchat.json."
+      "changelog": "RGB Chat 1.0.0 for Minecraft 26.2 (Fabric) — the first release of the rebuilt RGB Chat.\n\n#### Features\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod needed\n- Works in chat, signs, anvils, and item names; each context has its own config switch\n- Auto-creates `config/rgbchat.json` on first launch\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     },
     {
       "key": "fabric-2612",
@@ -54,7 +54,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 26.1.2 on Fabric.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod.\n- Auto-creates config/rgbchat.json."
+      "changelog": "RGB Chat 1.0.0 for Minecraft 26.1.2 (Fabric) — the first release of the rebuilt RGB Chat.\n\n#### Features\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod needed\n- Works in chat, signs, anvils, and item names; each context has its own config switch\n- Auto-creates `config/rgbchat.json` on first launch\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     },
     {
       "key": "neoforge-262",
@@ -75,7 +75,7 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 26.2 on Neoforge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod.\n- Auto-creates config/rgbchat.json."
+      "changelog": "RGB Chat 1.0.0 for Minecraft 26.2 (NeoForge) — the first release of the rebuilt RGB Chat.\n\n#### Features\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod needed\n- Works in chat, signs, anvils, and item names; each context has its own config switch\n- Auto-creates `config/rgbchat.json` on first launch\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     },
     {
       "key": "neoforge-2612",
@@ -96,7 +96,7 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 26.1.2 on Neoforge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod.\n- Auto-creates config/rgbchat.json."
+      "changelog": "RGB Chat 1.0.0 for Minecraft 26.1.2 (NeoForge) — the first release of the rebuilt RGB Chat.\n\n#### Features\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod needed\n- Works in chat, signs, anvils, and item names; each context has its own config switch\n- Auto-creates `config/rgbchat.json` on first launch\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     },
     {
       "key": "neoforge-1211",
@@ -114,7 +114,7 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 1.21.1 on NeoForge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod."
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1 (NeoForge) — the first release of the rebuilt RGB Chat.\n\n#### Features\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod needed\n- Works in chat, signs, anvils, and item names; each context has its own config switch\n- Auto-creates `config/rgbchat.json` on first launch\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     },
     {
       "key": "neoforge-1214",
@@ -132,7 +132,7 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 1.21.4 on NeoForge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod."
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.4 (NeoForge) — the first release of the rebuilt RGB Chat.\n\n#### Features\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod needed\n- Works in chat, signs, anvils, and item names; each context has its own config switch\n- Auto-creates `config/rgbchat.json` on first launch\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     },
     {
       "key": "neoforge-12111",
@@ -150,7 +150,7 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "### Added\n- RGB Chat rebuilt for Minecraft 1.21.11 on NeoForge.\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients render client-side without a server mod."
+      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.11 (NeoForge) — the first release of the rebuilt RGB Chat.\n\n#### Features\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod needed\n- Works in chat, signs, anvils, and item names; each context has its own config switch\n- Auto-creates `config/rgbchat.json` on first launch\n- Vanilla `§` codes keep their original meaning and end an active gradient"
     }
   ]
 }

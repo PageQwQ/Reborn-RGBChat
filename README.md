@@ -1,6 +1,10 @@
+<div align="center"><center>
+
 # RGB Chat — Reborn
 
-RGB colored chat and text rendering for modern Minecraft, rebuilt from the original 1.12.2 RGB Chat mod.
+A mod that lets you output colored text.
+
+</center></div>
 
 Type `#RRGGBB` tags anywhere text renders and it gets colored client-side — no server mod, no network involvement:
 
@@ -9,13 +13,13 @@ Type `#RRGGBB` tags anywhere text renders and it gets colored client-side — no
 - `##` — literal `#`; unrecognized `#`s show as-is
 - Vanilla `§` codes keep their semantics and end active gradients
 
-Supported render contexts: chat, signs, anvils, item names, and the message input preview.
+It also supports item names renamed on signs or anvils.
 
 ## Compatibility
 
 | Loader | Versions |
 |---|---|
-| Fabric | 1.21.1, 1.21.2 – 1.21.11, 26.1.2, 26.2 |
+| Fabric | 1.21.x, 26.1.2, 26.2 |
 | NeoForge | 1.21.1, 1.21.4, 1.21.11, 26.1.2, 26.2 |
 
 On dedicated servers the mod is a no-op.
@@ -36,7 +40,7 @@ The mod is a pure-Java core plus thin loader layers:
 | `mc-1-21-11-neoforge/` | NeoForge 1.21.11 | ModDevGradle, fixed version |
 | `scripts/` | — | Modrinth publish tooling |
 
-## Building
+## Build
 
 JDK 21 is required for the 1.21.x projects, JDK 25 for the 26.x projects
 (`org.gradle.java.home` pins the JDK in each `gradle.properties`).
@@ -52,30 +56,3 @@ JDK 21 is required for the 1.21.x projects, JDK 25 for the 26.x projects
 ```
 
 Testing in game: `./gradlew -p <dir> runClient [same -P switches]`.
-
-## Configuration
-
-`config/rgbchat.json` is auto-created on first launch:
-
-- `enabled` — master switch
-- `gradient` — when false, gradient tags degrade to their first color stop
-- `chat` / `signs` / `anvil` / `itemNames` / `inputPreview` — per-context switches
-
-## Publishing
-
-Uploads to Modrinth are handled by `scripts/publish.sh` (all versions are
-defined in `scripts/publish-config.json`):
-
-```sh
-scripts/publish.sh check                          # token + jars sanity check
-scripts/publish.sh create                         # create project + upload all versions
-scripts/publish.sh upload [key...]                # add versions to an existing project
-scripts/publish.sh <cmd> --dry-run                # print requests without sending
-```
-
-The API token comes from the `MODRINTH_PAT` environment variable and is never
-stored in the repository.
-
-## License
-
-MIT
