@@ -1,0 +1,91 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url = 'https://maven.aliyun.com/repository/public' }
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        maven {
+            name = 'Gradle Plugin Portal'
+            url = 'https://plugins.gradle.org/m2/'
+        }
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "net.fabricmc:fabric-loom:1.17.17"
+    }
+}
+
+apply plugin: 'net.fabricmc.fabric-loom-remap'
+apply plugin: 'java'
+
+def supportedVersions = [
+        '1.21.2', '1.21.3', '1.21.4', '1.21.5', '1.21.6',
+        '1.21.7', '1.21.8', '1.21.9', '1.21.10', '1.21.11',
+]
+def mcVersion = project.property('mc_version')
+if (!supportedVersions.contains(mcVersion)) {
+    throw new GradleException("未知版本: ${mcVersion}，支持: ${supportedVersions.join(', ')}")
+}
+
+version = "${mcVersion}-${mod_version}-fabric"
+group = project.maven_group
+base.archivesName = project.archives_base_name
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    withSourcesJar()
+}
+
+loom {
+    mixin {
+        useLegacyMixinAp = true
+    }
+    splitEnvironmentSourceSets()
+
+    mods {
+        rgbchat {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.client
+        }
+    }
+}
+
+repositories {
+    maven { url = 'https://maven.aliyun.com/repository/public' }
+    maven { url = 'https://maven.aliyun.com/repository/central' }
+    mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${mcVersion}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+}
+
+// Shared pure-Java common sources
+sourceSets {
+    main {
+        java.srcDirs += file('../common')
+    }
+}
+
+processResources {
+    def version = project.version
+    inputs.property "version", version
+    inputs.property "mcVersion", mcVersion
+    filesMatching("fabric.mod.json") {
+        expand "version": version, "mcVersion": mcVersion
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+    it.options.encoding = 'UTF-8'
+}
