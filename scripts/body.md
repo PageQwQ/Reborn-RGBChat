@@ -1,36 +1,41 @@
 # RGB Chat
 
-Colored chat messages using `&` color codes, just like older multi-player chat plugins.
+RGB colored chat and text rendering for modern Minecraft, rebuilt from the original 1.12.2 RGB Chat mod.
 
-Type `&6like &6this&r` in chat and links/names/colors appear as classic `§`-style colored text. Works everywhere text renders: chat, command feedback, power tools, signs (via client-side display), and more.
+Type `#RRGGBB` tags in chat and the following text renders in that color — no server mod needed:
 
-- Client-side only — **no server mod required**, no message tampering
-- Configurable in `config/rgbchat.json` (auto-created on first launch)
-- Rebuilds the original RGB Chat experience for modern Minecraft
+- `#FF0000red text` — solid color
+- `#FF0000-0000FFgradient text` — per-character gradient between 2+ color stops
+- `##` — a literal `#`, and a `#` that isn't a valid tag is shown as-is
+- Vanilla `§` codes keep their original meaning and end an active gradient
+
+Works everywhere text renders: chat, signs, anvils, item names, and the input preview before you send (each context has its own config switch).
+
+- Client-side only — **no server mod required**, nothing is sent over the network
+- Auto-creates `config/rgbchat.json` with all switches on
 
 ## Usage
 
-Open chat, type with `&` codes:
-
-- `&0`–`&9`, `&a`–`&f`: classic Minecraft colors
-- `&k`–`&o` (plus `&r` reset): formats — some legacy formats may fall back to colors
-- Example: `&bHello &c&lworld&r!`
+| Example | Result |
+|---|---|
+| `#FF5555Hello &fworld` | "Hello" in red, "world" in white |
+| `#00FF00-0000FFagradient` | green→blue gradient across the word |
 
 ## Compatibility
 
 | Loader | Versions |
 |---|---|
-| Fabric | 26.1.2, 26.2 |
+| Fabric | 1.21.1, 1.21.2 – 1.21.11, 26.1.2, 26.2 |
 | NeoForge | 26.1.2, 26.2 |
 
-On the dedicated server side this mod does nothing.
+On dedicated servers the mod is a harmless no-op.
 
 ## Configuration
 
-`config/rgbchat.json` (created automatically):
+`config/rgbchat.json` (created on first launch):
 
-- `useFormattingCodes`: enable `&k`/`&o` style formatting codes (default `true`)
-- `colorFirst`: color the first character group of a word (default `true`)
-- `lenience`: dash/hyphen lenience for non-Chinese text — adjusts how color codes apply across word boundaries (default `"cn-zh"`)
+- `enabled`: master switch
+- `gradient`: when false, gradient tags render as their first color stop
+- `chat`, `signs`, `anvil`, `itemNames`, `inputPreview`: per-context switches
 
-Find the original project and releases on [GitHub](https://github.com/waterfrog68/RGB-Chat-Renewed).
+Find the source and releases on [GitHub](https://github.com/PageQwQ/Reborn-RGBChat).
