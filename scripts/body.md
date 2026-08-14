@@ -26,7 +26,7 @@ Works everywhere text renders: chat, signs, anvils, item names, and the input pr
 | Loader | Versions |
 |---|---|
 | Fabric | 1.21.1, 1.21.2 – 1.21.11, 26.1.2, 26.2 |
-| NeoForge | 26.1.2, 26.2 |
+| NeoForge | 1.21.1, 1.21.4, 1.21.11, 26.1.2, 26.2 |
 
 On dedicated servers the mod is a harmless no-op.
 
