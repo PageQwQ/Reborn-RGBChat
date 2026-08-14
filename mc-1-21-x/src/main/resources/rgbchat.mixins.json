@@ -2,6 +2,7 @@
   "required": true,
   "package": "pageqwq.rgbchat.mixin",
   "compatibilityLevel": "JAVA_21",
+  "refmap": "client-rgbchat-refmap.json",
   "client": [
     "StringDecomposerMixin"
   ],
