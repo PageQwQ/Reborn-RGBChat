@@ -1,7 +1,6 @@
 package pageqwq.rgbchat;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +10,6 @@ public class RgbChatClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        RgbCompat.setModernUiLoaded(FabricLoader.getInstance().isModLoaded("modernui"));
         RgbConfigIO.load();
         LOGGER.info("RGB Chat Reborn initialized");
     }
