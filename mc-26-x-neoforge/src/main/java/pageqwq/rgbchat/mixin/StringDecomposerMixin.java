@@ -8,7 +8,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import pageqwq.rgbchat.RgbCompat;
 import pageqwq.rgbchat.RenderContext;
 import pageqwq.rgbchat.RgbConfig;
 import pageqwq.rgbchat.RgbParser;
@@ -32,9 +31,6 @@ public abstract class StringDecomposerMixin {
             cancellable = true)
     private static void rgbchat$applyRgbTags(String text, int start, Style style, Style resetStyle,
                                              FormattedCharSink sink, CallbackInfoReturnable<Boolean> cir) {
-        if (RgbCompat.isModernUiLoaded()) {
-            return;
-        }
         if (!RgbParser.containsTag(text)) {
             return;
         }
