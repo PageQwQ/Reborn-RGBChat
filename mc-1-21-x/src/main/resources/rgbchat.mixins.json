@@ -4,7 +4,16 @@
   "compatibilityLevel": "JAVA_21",
   "refmap": "client-rgbchat-refmap.json",
   "client": [
-    "StringDecomposerMixin"
+    "StringDecomposerMixin",
+    "ChatComponentMixin",
+    "EditBoxMixin",
+    "ChatScreenMixin",
+    "SignTextMixin",
+    "SignEditScreenMixin",
+    "AnvilScreenMixin",
+    "AnvilMenuMixin",
+    "ItemStackMixin",
+    "ModernUITooltipRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

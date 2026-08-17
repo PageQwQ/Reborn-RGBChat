@@ -3,7 +3,16 @@
   "package": "pageqwq.rgbchat.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "StringDecomposerMixin"
+    "StringDecomposerMixin",
+    "ChatComponentMixin",
+    "EditBoxMixin",
+    "ChatScreenMixin",
+    "SignTextMixin",
+    "SignEditScreenMixin",
+    "AnvilScreenMixin",
+    "AnvilMenuMixin",
+    "ItemStackMixin",
+    "ModernUITooltipRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

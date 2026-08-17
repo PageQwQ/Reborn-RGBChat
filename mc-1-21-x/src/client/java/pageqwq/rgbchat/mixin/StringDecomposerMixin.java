@@ -9,20 +9,23 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import pageqwq.rgbchat.RenderContext;
+import pageqwq.rgbchat.RgbCompat;
 import pageqwq.rgbchat.RgbConfig;
 import pageqwq.rgbchat.RgbParser;
 import pageqwq.rgbchat.RgbStyles;
 import pageqwq.rgbchat.StyledChar;
 
 /**
- * Single hook covering every formatted-text render path: all String and
- * FormattedText overloads of {@code StringDecomposer.iterateFormatted}
- * funnel into this five-argument method. Strings containing RGB tags are
- * decomposed by the shared parser and fed to the sink with RGB styles;
- * everything else is left to vanilla untouched.
+ * 普通（非 Modern UI）渲染路径的标签着色入口。
+ *
+ * <p>Modern UI 加载时直接放行：其布局引擎（{@code TextLayoutEngine} / {@code
+ * ModernStringSplitter} / {@code MixinEditBox}）按原始字符串索引布局与光标位置，任何在此处的
+ * 文本改写都会破坏下标映射（AIOOBE 崩溃或光标/换行错位）。Modern UI 下的着色由
+ * {@code ChatComponentMixin} / {@code SignTextMixin} / {@code ItemStackMixin} 在组件层完成，
+ * 输入框由 {@code EditBoxMixin} 做字符串级规范化。
  */
 @Mixin(StringDecomposer.class)
-public abstract class StringDecomposerMixin {
+abstract class StringDecomposerMixin {
 
     @Inject(
             method = "iterateFormatted(Ljava/lang/String;ILnet/minecraft/network/chat/Style;"
@@ -31,6 +34,9 @@ public abstract class StringDecomposerMixin {
             cancellable = true)
     private static void rgbchat$applyRgbTags(String text, int start, Style style, Style resetStyle,
                                              FormattedCharSink sink, CallbackInfoReturnable<Boolean> cir) {
+        if (RgbCompat.isModernUiLoaded()) {
+            return;
+        }
         if (!RgbParser.containsTag(text)) {
             return;
         }

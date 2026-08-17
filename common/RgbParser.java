@@ -178,9 +178,11 @@ public final class RgbParser {
      * Tries to parse a tag at {@code s.charAt(i) == '#'}:
      * {@code #RRGGBB} optionally followed by more {@code -RRGGBB} stops.
      *
+     * <p>Package-private so {@link RgbComponents}/{@link RgbInputFormatter} can scan for tags.
+     *
      * @return the stop colors, or {@code null} if there is no valid tag at {@code i}
      */
-    private static int[] tryParseTag(String s, int i) {
+    static int[] tryParseTag(String s, int i) {
         int n = s.length();
         if (i + 7 > n) {
             return null;
@@ -212,7 +214,7 @@ public final class RgbParser {
     }
 
     /** Total length of a tag with the given number of stops: {@code #RRGGBB} plus {@code -RRGGBB} per extra stop. */
-    private static int tagLength(int[] stops) {
+    static int tagLength(int[] stops) {
         return 1 + 6 + (stops.length - 1) * 7;
     }
 

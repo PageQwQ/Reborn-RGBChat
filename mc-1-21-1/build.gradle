@@ -55,12 +55,20 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 // Shared pure-Java common sources
 sourceSets {
     main {
         java.srcDirs += file('../common')
+    }
+    test {
+        java.srcDirs += file('../src/test/java')
     }
 }
 
