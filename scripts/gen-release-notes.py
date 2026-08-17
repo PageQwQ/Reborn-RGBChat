@@ -11,13 +11,12 @@ for v in cfg["versions"]:
     loader = "Fabric" if "fabric" in v["loaders"] else "NeoForge"
     loaders.setdefault(loader, []).extend(v["game_versions"])
 
+changelog = cfg["versions"][0].get("changelog", "")
+
 print(f"# RGB Chat {version}\n")
-print("The first release of the rebuilt RGB Chat.\n")
-print("""- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required
-- Works in chat, signs, anvils, item names, and the input preview before you send
-- Auto-creates `config/rgbchat.json` with all switches on
-- Vanilla `§` codes keep their original meaning and end an active gradient
-""")
-print("#### Supported versions")
+print(changelog + "\n")
+print("#### Downloads")
 print(f"- **Fabric**: {', '.join(sorted(set(loaders.get('Fabric', []))))}")
 print(f"- **NeoForge**: {', '.join(sorted(set(loaders.get('NeoForge', []))))}")
+print("")
+print("Find jars in the release assets (main + sources for every platform).")

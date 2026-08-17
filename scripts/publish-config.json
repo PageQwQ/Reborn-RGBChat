@@ -19,10 +19,10 @@
       "build": {
         "dir": "mc-1-21-1-neoforge"
       },
-      "jar": "mc-1-21-1-neoforge/build/libs/rgbchat-neoforge-1.21.1-1.0.0.jar",
-      "sources": "mc-1-21-1-neoforge/build/libs/rgbchat-neoforge-1.21.1-1.0.0-sources.jar",
-      "version_number": "1.0.0+1.21.1",
-      "version_title": "RGB Chat 1.0.0 for 1.21.1 (NeoForge)",
+      "jar": "mc-1-21-1-neoforge/build/libs/rgbchat-neoforge-1.21.1-1.0.2.jar",
+      "sources": "mc-1-21-1-neoforge/build/libs/rgbchat-neoforge-1.21.1-1.0.2-sources.jar",
+      "version_number": "1.0.2+1.21.1",
+      "version_title": "RGB Chat 1.0.2 for 1.21.1 (NeoForge)",
       "game_versions": [
         "1.21.1"
       ],
@@ -30,17 +30,17 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "neoforge-1214",
       "build": {
         "dir": "mc-1-21-4-neoforge"
       },
-      "jar": "mc-1-21-4-neoforge/build/libs/rgbchat-neoforge-1.21.4-1.0.0.jar",
-      "sources": "mc-1-21-4-neoforge/build/libs/rgbchat-neoforge-1.21.4-1.0.0-sources.jar",
-      "version_number": "1.0.0+1.21.4",
-      "version_title": "RGB Chat 1.0.0 for 1.21.4 (NeoForge)",
+      "jar": "mc-1-21-4-neoforge/build/libs/rgbchat-neoforge-1.21.4-1.0.2.jar",
+      "sources": "mc-1-21-4-neoforge/build/libs/rgbchat-neoforge-1.21.4-1.0.2-sources.jar",
+      "version_number": "1.0.2+1.21.4",
+      "version_title": "RGB Chat 1.0.2 for 1.21.4 (NeoForge)",
       "game_versions": [
         "1.21.4"
       ],
@@ -48,17 +48,17 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "neoforge-12111",
       "build": {
         "dir": "mc-1-21-11-neoforge"
       },
-      "jar": "mc-1-21-11-neoforge/build/libs/rgbchat-neoforge-1.21.11-1.0.0.jar",
-      "sources": "mc-1-21-11-neoforge/build/libs/rgbchat-neoforge-1.21.11-1.0.0-sources.jar",
-      "version_number": "1.0.0+1.21.11",
-      "version_title": "RGB Chat 1.0.0 for 1.21.11 (NeoForge)",
+      "jar": "mc-1-21-11-neoforge/build/libs/rgbchat-neoforge-1.21.11-1.0.2.jar",
+      "sources": "mc-1-21-11-neoforge/build/libs/rgbchat-neoforge-1.21.11-1.0.2-sources.jar",
+      "version_number": "1.0.2+1.21.11",
+      "version_title": "RGB Chat 1.0.2 for 1.21.11 (NeoForge)",
       "game_versions": [
         "1.21.11"
       ],
@@ -66,7 +66,7 @@
         "neoforge"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-12111",
@@ -76,10 +76,10 @@
           "-Pmc_version=1.21.11"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.11-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.11-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.11",
-      "version_title": "RGB Chat 1.0.0 for 1.21.11 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.11-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.11-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.11",
+      "version_title": "RGB Chat 1.0.2 for 1.21.11 (Fabric)",
       "game_versions": [
         "1.21.11"
       ],
@@ -87,7 +87,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-12110",
@@ -97,10 +97,10 @@
           "-Pmc_version=1.21.10"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.10-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.10-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.10",
-      "version_title": "RGB Chat 1.0.0 for 1.21.10 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.10-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.10-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.10",
+      "version_title": "RGB Chat 1.0.2 for 1.21.10 (Fabric)",
       "game_versions": [
         "1.21.10"
       ],
@@ -108,7 +108,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1219",
@@ -118,10 +118,10 @@
           "-Pmc_version=1.21.9"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.9-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.9-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.9",
-      "version_title": "RGB Chat 1.0.0 for 1.21.9 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.9-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.9-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.9",
+      "version_title": "RGB Chat 1.0.2 for 1.21.9 (Fabric)",
       "game_versions": [
         "1.21.9"
       ],
@@ -129,7 +129,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1218",
@@ -139,10 +139,10 @@
           "-Pmc_version=1.21.8"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.8-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.8-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.8",
-      "version_title": "RGB Chat 1.0.0 for 1.21.8 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.8-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.8-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.8",
+      "version_title": "RGB Chat 1.0.2 for 1.21.8 (Fabric)",
       "game_versions": [
         "1.21.8"
       ],
@@ -150,7 +150,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1217",
@@ -160,10 +160,10 @@
           "-Pmc_version=1.21.7"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.7-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.7-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.7",
-      "version_title": "RGB Chat 1.0.0 for 1.21.7 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.7-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.7-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.7",
+      "version_title": "RGB Chat 1.0.2 for 1.21.7 (Fabric)",
       "game_versions": [
         "1.21.7"
       ],
@@ -171,7 +171,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1216",
@@ -181,10 +181,10 @@
           "-Pmc_version=1.21.6"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.6-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.6-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.6",
-      "version_title": "RGB Chat 1.0.0 for 1.21.6 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.6-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.6-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.6",
+      "version_title": "RGB Chat 1.0.2 for 1.21.6 (Fabric)",
       "game_versions": [
         "1.21.6"
       ],
@@ -192,7 +192,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1215",
@@ -202,10 +202,10 @@
           "-Pmc_version=1.21.5"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.5-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.5-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.5",
-      "version_title": "RGB Chat 1.0.0 for 1.21.5 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.5-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.5-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.5",
+      "version_title": "RGB Chat 1.0.2 for 1.21.5 (Fabric)",
       "game_versions": [
         "1.21.5"
       ],
@@ -213,7 +213,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1214",
@@ -223,10 +223,10 @@
           "-Pmc_version=1.21.4"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.4-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.4-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.4",
-      "version_title": "RGB Chat 1.0.0 for 1.21.4 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.4-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.4-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.4",
+      "version_title": "RGB Chat 1.0.2 for 1.21.4 (Fabric)",
       "game_versions": [
         "1.21.4"
       ],
@@ -234,7 +234,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1213",
@@ -244,10 +244,10 @@
           "-Pmc_version=1.21.3"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.3-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.3-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.3",
-      "version_title": "RGB Chat 1.0.0 for 1.21.3 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.3-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.3-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.3",
+      "version_title": "RGB Chat 1.0.2 for 1.21.3 (Fabric)",
       "game_versions": [
         "1.21.3"
       ],
@@ -255,7 +255,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1212",
@@ -265,10 +265,10 @@
           "-Pmc_version=1.21.2"
         ]
       },
-      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.2-1.0.0-fabric.jar",
-      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.2-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.2",
-      "version_title": "RGB Chat 1.0.0 for 1.21.2 (Fabric)",
+      "jar": "mc-1-21-x/build/libs/rgbchat-1.21.2-1.0.2-fabric.jar",
+      "sources": "mc-1-21-x/build/libs/rgbchat-1.21.2-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.2",
+      "version_title": "RGB Chat 1.0.2 for 1.21.2 (Fabric)",
       "game_versions": [
         "1.21.2"
       ],
@@ -276,17 +276,17 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     },
     {
       "key": "fabric-1211",
       "build": {
         "dir": "mc-1-21-1"
       },
-      "jar": "mc-1-21-1/build/libs/rgbchat-1.21.1-1.0.0-fabric.jar",
-      "sources": "mc-1-21-1/build/libs/rgbchat-1.21.1-1.0.0-fabric-sources.jar",
-      "version_number": "1.0.0+1.21.1",
-      "version_title": "RGB Chat 1.0.0 for 1.21.1 (Fabric)",
+      "jar": "mc-1-21-1/build/libs/rgbchat-1.21.1-1.0.2-fabric.jar",
+      "sources": "mc-1-21-1/build/libs/rgbchat-1.21.1-1.0.2-fabric-sources.jar",
+      "version_number": "1.0.2+1.21.1",
+      "version_title": "RGB Chat 1.0.2 for 1.21.1 (Fabric)",
       "game_versions": [
         "1.21.1"
       ],
@@ -294,7 +294,7 @@
         "fabric"
       ],
       "release_channel": "release",
-      "changelog": "RGB Chat 1.0.0 for Minecraft 1.21.1–1.21.11, 26.1.2 and 26.2 on Fabric and NeoForge — the rebuilt RGB Chat is here.\n\n- `#RRGGBB` solid colors and `#RRGGBB-RRGGBB` gradients, rendered entirely client-side — no server mod required\n- Works in chat, signs, anvils, item names, and the input preview before you send\n- Auto-creates `config/rgbchat.json` with all switches on\n- Vanilla `§` codes keep their original meaning and end an active gradient"
+      "changelog": "Modern UI compatibility overhaul: full per-character RGB rendering under Modern UI's text engine, with color tags hidden live in every input box.\n\n### Added\n- Modern UI compatibility for chat, signs, anvils and item names — true per-character RGB rendering through Modern UI's text engine\n- Live tag hiding in the chat and anvil rename input boxes with exact cursor, selection and scrolling behavior\n- Sign edit screen: color tags are hidden while typing and no longer count toward the per-line width limit\n- Modern UI tooltips: gradient-colored item names drive the tooltip border with their own stop colors instead of the rainbow spectrum\n\n### Fixed\n- Game crash when opening the anvil screen with Modern UI loaded\n- Input-box crash when typing a complete color tag under Modern UI (ArrayIndexOutOfBoundsException in Modern UI's EditBox handler)\n- Scrolling long inputs no longer leaves stray uppercase hex fragments at the cursor\n- Colored anvil renames no longer bump the item rarity (epic-purple tooltip border removed)\n- Multi-stop gradient tags are now hidden correctly while typing in every input box\n- Signs: color tags no longer eat the line's width budget\n\n26.x platforms (26.1.2 / 26.2) are unchanged from v1.0.1."
     }
   ]
 }
