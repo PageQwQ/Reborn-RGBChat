@@ -153,7 +153,7 @@ PY
       exit 1
     fi
     build_missing
-    py - "$CONFIG" "$ROOT" "$project_id" "$DRY" "${KEYS[*]}" <<'PY'
+    py - "$CONFIG" "$ROOT" "$project_id" "$DRY" "${KEYS[*]:-}" <<'PY'
 import json, os, subprocess, sys
 cfg = json.load(open(sys.argv[1])); root = sys.argv[2]
 pid, dry, only = sys.argv[3], bool(sys.argv[4]), sys.argv[5].split()
